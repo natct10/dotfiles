@@ -1,0 +1,13 @@
+{
+    "python.formatting.provider": "black",
+    "telemetry.enableCrashReporter": false,
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 0,
+    "git.confirmSync": false,
+    "breadcrumbs.enabled": true,
+    "git.autofetch": true,
+    "explorer.confirmDragAndDrop": false,
+    "terminal.enableAppInsights": false,
+    "gitlens.advanced.telemetry.enabled": false
+}

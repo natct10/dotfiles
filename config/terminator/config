@@ -1,0 +1,19 @@
+[global_config]
+  focus = mouse
+  title_transmit_bg_color = "#555753"
+[keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.87
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
