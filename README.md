@@ -1,4 +1,4 @@
-# Dotfiles
+ Dotfiles
 
 ## Tree view
 
@@ -7,6 +7,10 @@
 │   ├── dunst
 │   │   └── dunstrc
 │   ├── fish
+│   │   ├── completions
+│   │   │   ├── docker.fish
+│   │   │   ├── kubectl.fish
+│   │   │   └── minikube.fish
 │   │   ├── fish_variables
 │   │   └── functions
 │   │       ├── bat.fish
@@ -34,6 +38,7 @@
 │   ├── terminator
 │   │   └── config
 │   └── vscode_settings.json
+├── README.md
 ├── screenlayout
 │   ├── screen_dual.sh
 │   ├── screen_ext.sh
