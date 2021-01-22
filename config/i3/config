@@ -183,7 +183,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id pasystray 
 
 # VPN
-exec --no-startup-id protonvpn-tray
+# exec --no-startup-id protonvpn-tray
 
 # Bluetooth
 # exec --no-startup-id blueman-applet
