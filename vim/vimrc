@@ -1,8 +1,12 @@
 filetype off
 call pathogen#infect()
 call pathogen#helptags()
-set number:x
-color dracula
+set number
+
+packadd! dracula
+syntax enable
+colorscheme dracula
+
 filetype plugin indent on
 syntax on
 

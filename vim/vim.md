@@ -13,8 +13,13 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 ```
 
-## To Do
+## Dracula
 
-### Dracula
+<https://draculatheme.com/vim>
 
-### Python
+## Vimrc
+ 
+```sh
+cp vimrc ~/.vimrc
+```
+
