@@ -1,0 +1,6 @@
+Host <name>
+    User <username>
+    Hostname <url_or_ip>
+    Port 2222
+    IdentityFile ~/.ssh/<key>
+
