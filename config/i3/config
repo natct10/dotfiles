@@ -77,6 +77,8 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+q focus parent
 
+# Custom workspaces
+# set $ws1 "1: web" # et remplacer le nom du workspace avec la variable $ws1
 # switch to workspace
 bindsym $mod+ampersand workspace 1
 bindsym $mod+eacute workspace 2
@@ -100,6 +102,15 @@ bindsym $mod+Shift+egrave move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+ccedilla move container to workspace 9
 bindsym $mod+Shift+agrave move container to workspace 10
+
+# utiliser `xprop | grep WM_CLASS` et cliquer sur l'app
+# for_assign [class="Simplenote"] move to workspace 2
+assign [class="Firefox"] 1
+assign [class="Thunderbird"] 2
+assign [class="Dino-im"] 2
+assign [class="Simplenote"] 2
+assign [class="jetbrains-pycharm-ce"] 3
+assign [class="Quodlibet"] 4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
