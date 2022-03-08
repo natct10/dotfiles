@@ -111,6 +111,7 @@ assign [class="Dino-im"] 2
 assign [class="Simplenote"] 2
 assign [class="jetbrains-pycharm-ce"] 3
 assign [class="Quodlibet"] 4
+assign [class="Rambox"] 4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -179,7 +180,7 @@ exec --no-startup-id xautolock -time 120 -locker i3lock && systemctl suspend
 # exec --no-startup-id xautolock -time 7 -locker slock
 
 # Wallpaper
-exec --no-startup-id feh --bg-fill ~/dev/Dotfiles/Wallpapers/Networks.jpg
+exec --no-startup-id feh --bg-fill ~/dev/Dotfiles/Wallpapers/Networks.jpg 
 
 # Redshift autostart
 exec --no-startup-id redshift
