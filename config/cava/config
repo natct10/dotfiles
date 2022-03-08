@@ -1,4 +1,14 @@
+; https://github.com/karlstav/cava/blob/master/example_files/config
+
 [color]
 gradient = 1
 gradient_color_1 = '#0099ff'
 gradient_color_2 = '#ff3399'
+
+[output]
+channels = mono
+reverse = 1
+
+[smoothing]
+integral = 77
+
