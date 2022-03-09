@@ -172,6 +172,9 @@ client.focused_inactive #333333 #5F676A #ffffff #484e50
 client.unfocused        #333333 #424242 #888888 #292d2e
 client.urgent           #C10004 #900000 #ffffff #900000
 
+# Compton
+exec --no-startup-id compton --backend glx --vsync opengl -b
+
 # Lock
 bindsym Control+Mod1+l exec i3lock -c 333333
 
