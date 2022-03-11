@@ -5,4 +5,3 @@ if type "xrandr"; then
 else
   polybar --reload main &
 fi
-
