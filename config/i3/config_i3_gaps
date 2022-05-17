@@ -206,6 +206,9 @@ exec --no-startup-id nm-applet
 # Audio 
 exec --no-startup-id pasystray 
 
+# Input
+exec --no-startup-id fcitx5
+
 # VPN
 # exec --no-startup-id protonvpn-tray
 
