@@ -1,0 +1,9 @@
+[core]
+	editor = vim
+[user]
+	name = "" 
+	email = ""
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
