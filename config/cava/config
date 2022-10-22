@@ -12,3 +12,8 @@ reverse = 1
 [smoothing]
 integral = 77
 
+[input]
+method = alsa
+source = hw:1,0
+; method = pulse
+; source = auto
