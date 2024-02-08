@@ -11,10 +11,11 @@ node_modules*
 *.pyc
 .pytest_cache
 __pycache__
-
+.mypy_cache
 .st*
-
+.ruff_cache
 .thumbnails*
 
 .Spotlight*
 
+*DeviceUpdater*
