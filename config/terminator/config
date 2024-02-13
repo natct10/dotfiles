@@ -1,13 +1,18 @@
 [global_config]
   focus = mouse
-  title_transmit_bg_color = "#555753"
 [keybindings]
 [profiles]
   [[default]]
-    background_darkness = 0.87
+    background_darkness = 0.93
     background_type = transparent
-    cursor_color = "#aaaaaa"
+    cursor_shape = ibeam
+    font = Monospace 10
+    palette = "#2e3436:#ef2929:#33d17a:#c4a000:#3584e4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    use_system_font = False
+    use_theme_colors = True
     copy_on_selection = True
+    title_transmit_bg_color = "#1a5fb4"
+    title_inactive_bg_color = "#3584e4"
 [layouts]
   [[default]]
     [[[window0]]]
@@ -16,4 +21,5 @@
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = default
 [plugins]

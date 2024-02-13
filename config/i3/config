@@ -26,9 +26,26 @@ bindsym $mod+Shift+A kill
 # Rofi
 bindsym $mod+d exec --no-startup-id "rofi -show drun -show-icons -font \\"DejaVu 9\\" -run-shell-command '{terminal} -e \\" {cmd}; read -n 1 -s\\"'"
 
-# dmenu
-# bindsym $mod+d exec dmenu_run -fn 'Ubuntu-13' -l 10
-# bindsym $mod+d exec dmenu_run -fn 'Ubuntu-13'
+# i3-gaps
+# https://github.com/Airblader/i3
+# mkdir /tmp/build 
+# cd /tmp/build
+# git clone https://www.github.com/Airblader/i3 i3-gaps
+# cd i3-gaps
+# git checkout gaps && git pull
+# sudo apt install meson asciidoc
+# meson -Ddocs=true -Dmans=true ../build
+# meson compile -C ../build
+# sudo meson install -C ../build
+
+gaps inner 10 
+gaps outer 0
+for_window [class="^.*"] border pixel 0
+# Only enable gaps on a workspace when there is at least one container
+smart_gaps on
+# Activate smart borders (always)
+smart_borders on
+hide_edge_borders smart_no_gaps
 
 # change focus
 bindsym $mod+j focus left
@@ -105,13 +122,13 @@ bindsym $mod+Shift+agrave move container to workspace 10
 
 # utiliser `xprop | grep WM_CLASS` et cliquer sur l'app
 # for_assign [class="Simplenote"] move to workspace 2
-assign [class="Firefox"] 1
+assign [class="firefox"] 1
 assign [class="Thunderbird"] 2
 assign [class="Dino-im"] 2
-assign [class="Simplenote"] 2
 assign [class="jetbrains-pycharm-ce"] 3
+assign [class="vscodium"] 3
 assign [class="Quodlibet"] 4
-assign [class="Rambox"] 4
+assign [class="Simplenote"] 4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -144,16 +161,8 @@ bar {
 	status_command i3status --config ~/.config/i3/i3status.conf
 	position bottom
 	separator_symbol " | ■ | "
-	font pango: Ubuntu 12
-
-	# Tray bar
-	# tray_output primary
-	# tray_output DP-1
-	# tray_output eDP-1 
-	# tray_output eDP1
-	# tray_output LVDS-0
-
-	tray_padding 0
+	font pango: Ubuntu 11
+	tray_padding 1
 
 	colors {
 		background #232323
@@ -172,14 +181,16 @@ client.focused_inactive #333333 #5F676A #ffffff #484e50
 client.unfocused        #333333 #424242 #888888 #292d2e
 client.urgent           #C10004 #900000 #ffffff #900000
 
-# Compton
-exec --no-startup-id compton --backend glx --vsync opengl -b
+# Picom (copositor)
+# exec --no-startup-id compton --backend glx --vsync opengl -b
+# exec --no-startup-id picom -f
+exec --no-startup-id picom --config /home/nat/.config/compton/compton.conf
 
 # Lock
 bindsym Control+Mod1+l exec i3lock -c 333333
 
 # Auto lock with xautolock
-exec --no-startup-id xautolock -time 120 -locker i3lock && systemctl suspend
+exec --no-startup-id xautolock -time 30 -locker i3lock && systemctl suspend
 # exec --no-startup-id xautolock -time 7 -locker slock
 
 # Wallpaper
@@ -196,6 +207,9 @@ exec --no-startup-id nm-applet
 
 # Audio 
 exec --no-startup-id pasystray 
+
+# Input
+exec --no-startup-id fcitx5
 
 # VPN
 # exec --no-startup-id protonvpn-tray
@@ -242,3 +256,4 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-volume 0 0%
 # bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
+
