@@ -1,4 +1,4 @@
- Dotfiles
+# Dotfiles
 
 ## Tree view
 
@@ -28,6 +28,7 @@
 │   │       ├── gfp.fish
 │   │       ├── gitd.fish
 │   │       ├── gits.fish
+│   │       ├── gl.fish
 │   │       ├── glog.fish
 │   │       ├── isinst.fish
 │   │       ├── kb.fish
@@ -35,6 +36,7 @@
 │   │       ├── p.fish
 │   │       ├── pi.fish
 │   │       ├── pp.fish
+│   │       ├── rm.fish
 │   │       ├── screen_double_ext.fish
 │   │       ├── screen_dual.fish
 │   │       ├── screen_ext.fish
@@ -49,9 +51,11 @@
 │   │   └── config.conf
 │   ├── polybar
 │   │   ├── config
+│   │   ├── config.ini
 │   │   └── launch_polybar.sh
 │   ├── rofi
-│   │   └── config
+│   │   ├── config
+│   │   └── config.rasi
 │   ├── terminator
 │   │   └── config
 │   ├── tilix.dconf
