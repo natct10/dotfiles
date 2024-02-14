@@ -128,7 +128,7 @@ assign [class="Dino-im"] 2
 assign [class="jetbrains-pycharm-ce"] 3
 assign [class="vscodium"] 3
 assign [class="Quodlibet"] 4
-assign [class="Simplenote"] 4
+assign [class="Joplin"] 4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
