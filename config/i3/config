@@ -185,6 +185,7 @@ client.urgent           #C10004 #900000 #ffffff #900000
 # exec --no-startup-id compton --backend glx --vsync opengl -b
 # exec --no-startup-id picom -f
 exec --no-startup-id picom --config /home/nat/.config/compton/compton.conf
+# exec_always picom -f
 
 # Lock
 bindsym Control+Mod1+l exec i3lock -c 333333
@@ -243,9 +244,11 @@ exec --no-startup-id xinput set-prop 12 306 1
 
 # Bind volume controls to pulseaudio
 # increase sound volume
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+# @DEFAULT_SINK@ is a useds by pactl to reference the default output, but it might
+# not be the current output.
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 # decrease sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 # mute
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-volume 0 0%
 
